@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Logo from "../assets/logo-mobile.png";
-import iconDown from "../assets/icon-chevron-down.svg";
-import iconUp from "../assets/icon-chevron-up.svg";
 import elipsis from "../assets/icon-vertical-ellipsis.svg";
 import HeaderDropDown from "./HeaderDropDown";
 import ElipsisMenu from "./ElipsisMenu";
@@ -76,7 +74,7 @@ const Header = ({ setIsBoardModalOpen, isBoardModalOpen }) => {
 
         <div className=" flex space-x-4 items-center md:space-x-6 ">
           <button
-            className=" button hidden md:block hover:bg-black py-2 px-3 rounded-2xl"
+            className=" button hidden md:block hover:bg-black hover:text-white py-2 px-3 rounded-2xl"
             onClick={() => {
               setIsTaskModalOpen((prevState) => !prevState);
             }}
